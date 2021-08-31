@@ -16,7 +16,6 @@ headers = {
 
 
 def request_json(nickname):
-    base_url = f'streams?user_login={nickname}'
-    url_follows_list = 'https://api.twitch.tv/helix/' + base_url
-    request_test = requests.get(url=url_follows_list, headers=headers).json()
-    return request_test
+    base_url = f'https://api.twitch.tv/helix/streams?user_login={nickname}'
+    request = requests.get(url=base_url, headers=headers).json()
+    return request
