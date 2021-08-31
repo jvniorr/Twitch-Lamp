@@ -1,0 +1,1 @@
+{'lewus': 'Pink', 'Popo': 'White'}
